@@ -1,0 +1,122 @@
+body {
+    background-color: #F8D6B1;
+    font-family: 'Raleway', sans-serif;
+}
+
+.header {
+    margin: 0;
+    width: 100%;
+    line-height: 1.2em;
+    padding-top: 100px;
+    padding-bottom: 0px;
+}
+
+.header__title {
+    text-align: center;
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 70px;
+}
+
+.header__subtitle {
+    text-align: center;  
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.header__quote {
+    text-align: justify;
+    margin: 2em;
+    padding: 1em .5em 2em 1em;
+    font-size: 20px;
+    color: #043933;
+    line-height: 1em;
+    border-left: 0.5em solid #DDD;
+    box-shadow: 0 0 6px rgba(0,0,0,0.5)
+}
+
+.header__quote:before {
+    display: block;
+    height: 0;
+    content: "“";
+    margin-left: -.95em;
+    font: italic 400%/1 Cochin,Georgia,"Times New Roman", serif;
+}
+
+cite {
+    float: right;
+}
+
+.literature {
+    font-weight: bold;
+}
+
+.content {
+    width: 100%;
+    margin-bottom: 80px;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+button {
+    min-height: 50px;
+    min-width: 150px;
+    margin:15px;
+    font-size: 20px;
+    background-color: #303142;
+    color: #FFFFFF;
+    border-radius: 10px;
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer;
+}
+
+hr {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.emotions__text {
+    margin-left: 50px;
+}
+
+.emotions__text div {
+    margin: 100px 0 100px 0;
+}
+
+.emotions__text h2 {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2em;
+    margin-left: 40px;
+}
+
+.emotions__text blockquote, cite {
+    color: #043933;
+    font-size: 1.2em;
+}
+
+@media screen and (min-width: 850px) {
+    .content, .header {
+        width: 850px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.copyright {
+    display: block;
+    text-align: center;
+}
+
+#top__btn {
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+    min-width: 60px;
+    min-height: 48px;
+}
